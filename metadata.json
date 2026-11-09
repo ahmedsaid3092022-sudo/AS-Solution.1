@@ -1,0 +1,8 @@
+{
+  "name": "AS Solution - Attendance & Employee Management System",
+  "description": "نظام أيه إس لإدارة الموظفين والحضور والانصراف، الربط مع الأجهزة، النسخ الاحتياطي، الترخيص والاشتراكات، واختبارات النظام.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

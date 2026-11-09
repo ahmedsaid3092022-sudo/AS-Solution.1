@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+  "appId": "com.assolution.attendance",
+  "productName": "AS Solution ERP & Attendance System",
+  "copyright": "Copyright © 2026 AS Solution Systems Cairo",
+  "directories": {
+    "output": "dist_electron",
+    "buildResources": "build"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "package.json"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64", "ia32"]
+      },
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "public/icon.png",
+    "legalTrademarks": "AS Solution"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "AS Solution Attendance",
+    "installerIcon": "public/icon.png",
+    "uninstallerIcon": "public/icon.png",
+    "installerHeaderIcon": "public/icon.png"
+  },
+  "mac": {
+    "category": "public.app-category.business",
+    "target": ["dmg"]
+  },
+  "linux": {
+    "target": ["AppImage", "deb"]
+  }
+}

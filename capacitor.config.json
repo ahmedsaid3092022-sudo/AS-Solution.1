@@ -1,0 +1,36 @@
+{
+  "appId": "com.assolution.attendance",
+  "appName": "AS Solution Attendance",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 2000,
+      "launchAutoHide": true,
+      "backgroundColor": "#020617",
+      "androidSplashResourceName": "splash",
+      "showSpinner": false
+    },
+    "Keyboard": {
+      "resize": "body",
+      "style": "DARK"
+    },
+    "Camera": {
+      "permissions": ["camera", "photos"]
+    },
+    "Geolocation": {
+      "permissions": ["location"]
+    },
+    "Network": {
+      "status": true
+    },
+    "Device": {
+      "info": true
+    }
+  },
+  "cordova": {}
+}
